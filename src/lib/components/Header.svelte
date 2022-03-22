@@ -2,7 +2,7 @@
   import { page } from "$app/stores";
 </script>
 
-<header class="w-48">
+<header class="w-56">
   <a href="/" class=" text-5xl blue text-length uppercase leading-tight">Joaquin Beltran</a>
 
   <ul class="flex flex-col space-y-2 pt-8 text-2xl font-extralight blue">
