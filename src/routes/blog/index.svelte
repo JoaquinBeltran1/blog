@@ -15,11 +15,10 @@
   export let posts;
 </script>
 
-<hr />
-<ul class="space-y-3">
+<ul class="space-y-3 pt-3">
   {#each posts as post}
-    <li class="px-8 py-4">
-      <div class="flex justify-between items-baseline">
+    <li class="px-8">
+      <div class="flex flex-col justify-between items-baseline">
         <h2 class="text-2xl blue hover:text-blue-400">
           <a href={post.path}>
             {post.meta.title}
@@ -27,12 +26,7 @@
         </h2>
         <p class="light-blue italic">{post.meta.date}</p>
       </div>
-
-      <p class="light-blue italic">
-        {post.meta.excerpt}
-      </p>
     </li>
-    <hr />
   {/each}
 </ul>
 

@@ -4,27 +4,22 @@
   import "../app.css";
 </script>
 
-<div class="justify-center px-4 bg selection:bg-orange-200 ">
-  <div class="test m-auto flex flex-col h-screen">
-    <Header />
-
-    <main class="flex-auto pt-32">
-      <slot />
-    </main>
-
+<div class="h-screen">
+  <div class=" selection:bg-orange-200 flex flex-col h-full">
+    <div class="flex flex-col md:flex-row parent">
+      <div class=" border-b pb-4 md:pb-0 md:border-r md:border-b-0 border-gray-300 px-8 pt-8">
+        <Header />
+      </div>
+      <main class="pt-8 px-10 w-full">
+        <slot />
+      </main>
+    </div>
     <Footer />
   </div>
 </div>
 
 <style>
-  @media (min-width: 1150px) {
-    .test {
-      width: 1150px;
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-  }
-  .bg {
-    background-color: rgb(255, 250, 244);
+  .parent {
+    flex: 1 1 auto;
   }
 </style>

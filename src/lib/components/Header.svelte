@@ -2,20 +2,17 @@
   import { page } from "$app/stores";
 </script>
 
-<header>
-  <div class="pt-10">
-    <div class=" text-center">
-      <a href="/" class="text-center text-4xl font-extralight blue hover:text-blue-400">Joaquin Beltran</a>
-    </div>
-    <ul class="flex justify-center space-x-4 pt-8 text-2xl font-extralight blue">
-      <li class="hover:text-blue-400" class:active={$page.url.pathname === "/blog"}>
-        <a href="/blog">Blog</a>
-      </li>
-      <li class="hover:text-blue-400" class:active={$page.url.pathname === "/about"}>
-        <a href="/about">About</a>
-      </li>
-    </ul>
-  </div>
+<header class="w-48">
+  <a href="/" class=" text-5xl blue text-length uppercase leading-tight">Joaquin Beltran</a>
+
+  <ul class="flex flex-col space-y-2 pt-8 text-2xl font-extralight blue">
+    <li class="hover:text-blue-400" class:active={$page.url.pathname === "/blog"}>
+      <a href="/blog">Blog</a>
+    </li>
+    <li class="hover:text-blue-400" class:active={$page.url.pathname === "/about"}>
+      <a href="/about">About</a>
+    </li>
+  </ul>
 </header>
 
 <style>
@@ -27,5 +24,8 @@
   }
   .blue {
     color: rgb(52, 78, 162);
+  }
+  .text-length {
+    max-width: 3ch;
   }
 </style>

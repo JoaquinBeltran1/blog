@@ -1,4 +1,4 @@
-<h1 class="text-4xl font-extralight blue">Under construction! 😀</h1>
+<h1 class="text-4xl font-extralight blue pt-1 leading-tight items-baseline">Under construction! 😀</h1>
 
 <style>
   .blue {
