@@ -1,1 +1,1 @@
-[{"meta":{"title":"Post TWO","date":"2022-12-14"},"path":"/blog/2"},{"meta":{"title":"Post One","date":"2021-12-14"},"path":"/blog/1"}]
+[{"meta":{"title":"Post TWO","number":2,"date":"No date yet","tags":["Dataset","test"],"excerpt":"Next steps"},"path":"/blog/2"},{"meta":{"title":"Post One","number":1,"date":"22nd of March 2022","tags":["Dataset","test"],"excerpt":"Project motivation and objectives + setting up the environment + dataset description"},"path":"/blog/1"}]
