@@ -4,11 +4,10 @@
 
 <header>
   <div class="pt-10">
-    <div class="text-center text-4xl font-extralight blue">Joaquin Beltran</div>
+    <div class=" text-center">
+      <a href="/" class="text-center text-4xl font-extralight blue hover:text-blue-400">Joaquin Beltran</a>
+    </div>
     <ul class="flex justify-center space-x-4 pt-8 text-2xl font-extralight blue">
-      <li class="hover:text-blue-400" class:active={$page.url.pathname === "/"}>
-        <a href="/">Home</a>
-      </li>
       <li class="hover:text-blue-400" class:active={$page.url.pathname === "/blog"}>
         <a href="/blog">Blog</a>
       </li>

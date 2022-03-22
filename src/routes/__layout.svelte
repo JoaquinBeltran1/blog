@@ -1,17 +1,18 @@
 <script>
+  import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
   import "../app.css";
 </script>
 
-<div class="justify-center px-4 bg">
+<div class="justify-center px-4 bg selection:bg-orange-200 ">
   <div class="test m-auto flex flex-col h-screen">
     <Header />
 
-    <main class="flex-auto">
+    <main class="flex-auto pt-32">
       <slot />
     </main>
 
-    <footer>Hello, I'm the footer.</footer>
+    <Footer />
   </div>
 </div>
 

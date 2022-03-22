@@ -1,3 +1,7 @@
-<h1>Hi, I'm Josh!</h1>
+<h1 class="text-4xl font-extralight blue">Under construction! 😀</h1>
 
-<p>This is my about page.</p>
+<style>
+  .blue {
+    color: rgb(52, 78, 162);
+  }
+</style>

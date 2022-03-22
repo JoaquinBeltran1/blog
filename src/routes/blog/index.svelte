@@ -15,15 +15,32 @@
   export let posts;
 </script>
 
-<ul>
+<hr />
+<ul class="space-y-3">
   {#each posts as post}
-    <li>
-      <h2>
-        <a href={post.path}>
-          {post.meta.title}
-        </a>
-      </h2>
-      Published {post.meta.date}
+    <li class="px-8 py-4">
+      <div class="flex justify-between items-baseline">
+        <h2 class="text-2xl blue hover:text-blue-400">
+          <a href={post.path}>
+            {post.meta.title}
+          </a>
+        </h2>
+        <p class="light-blue italic">{post.meta.date}</p>
+      </div>
+
+      <p class="light-blue italic">
+        {post.meta.excerpt}
+      </p>
     </li>
+    <hr />
   {/each}
 </ul>
+
+<style>
+  .blue {
+    color: rgb(52, 78, 162);
+  }
+  .light-blue {
+    color: rgb(129, 144, 199);
+  }
+</style>
