@@ -4,6 +4,10 @@
   export let tags;
 </script>
 
+<svelte:head>
+  <title>{title} | Joaquin Beltran</title>
+</svelte:head>
+
 <hr class="pb-6" />
 <div class="blue">
   <div class="md:flex space-y-3 md:space-y-0 justify-between items-baseline">

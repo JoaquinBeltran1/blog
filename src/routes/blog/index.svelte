@@ -15,6 +15,10 @@
   export let posts;
 </script>
 
+<svelte:head>
+  <title>Blog | Joaquin Beltran</title>
+</svelte:head>
+
 <ul class="space-y-3 pt-3">
   {#each posts as post}
     <li class="px-8">

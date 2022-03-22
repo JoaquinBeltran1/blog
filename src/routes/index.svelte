@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Home | Joaquin Beltran</title>
+</svelte:head>
+
 <div class="blue">
   <div class="text-5xl font-extralight leading-tight">
     <h1>Welcome to my personal website.</h1>
