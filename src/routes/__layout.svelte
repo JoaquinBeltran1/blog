@@ -3,14 +3,16 @@
   import "../app.css";
 </script>
 
-<div class="justify-center px-4 test m-auto bg-red-200">
-  <Header />
+<div class="justify-center px-4 bg">
+  <div class="test m-auto flex flex-col h-screen">
+    <Header />
 
-  <main>
-    <slot />
-  </main>
+    <main class="flex-auto">
+      <slot />
+    </main>
 
-  <footer>Hello, I'm the footer.</footer>
+    <footer>Hello, I'm the footer.</footer>
+  </div>
 </div>
 
 <style>
@@ -20,5 +22,8 @@
       padding-left: 6px;
       padding-right: 6px;
     }
+  }
+  .bg {
+    background-color: rgb(255, 250, 244);
   }
 </style>
