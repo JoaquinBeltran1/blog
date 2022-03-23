@@ -1,4 +1,4 @@
-<footer class="blue text-center py-1 border-t border-gray-300">© 2022 Joaquin Beltran | Made with <a href="https://kit.svelte.dev" target="_blank" class="text-blue-400">Sveltekit</a></footer>
+<footer class="blue text-center py-1 border-t border-gray-300">© 2022 Joaquin Beltran | Made with <a href="https://kit.svelte.dev" target="_blank" class="text-blue-400">SvelteKit</a></footer>
 
 <style>
   .blue {

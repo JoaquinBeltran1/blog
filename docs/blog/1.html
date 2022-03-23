@@ -8,14 +8,14 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content=""><title>Post One | Joaquin Beltran</title>
-	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-d09b0682.css">
-	<link rel="stylesheet" href="/_app/assets/_post-fd9f9419.css">
-	<link rel="modulepreload" href="/_app/start-dbdf93fd.js">
+		<meta http-equiv="content-security-policy" content=""><title>I. Intro &amp; dataset generation (Part 1) | Joaquin Beltran</title>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6d5c6788.css">
+	<link rel="stylesheet" href="/_app/assets/_post-48dee726.css">
+	<link rel="modulepreload" href="/_app/start-ab6aabdc.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-f39aa01d.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-ed8b9a8d.js">
-	<link rel="modulepreload" href="/_app/pages/blog/1.md-7efedfcb.js">
-	<link rel="modulepreload" href="/_app/chunks/_post-836be565.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-95c2f310.js">
+	<link rel="modulepreload" href="/_app/pages/blog/1.md-786dc464.js">
+	<link rel="modulepreload" href="/_app/chunks/_post-df0e03a9.js">
 	</head>
 	<body>
 		<div>
@@ -23,30 +23,72 @@
 
 <div class="h-screen font-inter"><div class="selection:bg-orange-200 flex flex-col h-full"><div class="flex flex-col md:flex-row parent svelte-er6d64"><div class="border-b pb-4 md:pb-0 md:border-r md:border-b-0 border-gray-300 px-8 pt-8"><header class="w-56"><a href="/" class="text-5xl blue text-length uppercase leading-tight svelte-w7owg3">Joaquin Beltran</a>
 
-  <ul class="flex flex-col space-y-2 pt-8 text-2xl font-extralight blue svelte-w7owg3"><li class="hover:text-blue-400 svelte-w7owg3"><a href="/blog">Blog</a></li>
-    <li class="hover:text-blue-400 svelte-w7owg3"><a href="/about">About</a></li></ul>
+  <ul class="flex flex-col space-y-2 pt-8 text-2xl font-extralight blue svelte-w7owg3"><li class="svelte-w7owg3"><a href="/blog" class="hover:text-blue-400">Blog</a></li>
+    <li class="svelte-w7owg3"><a href="/about" class="hover:text-blue-400">About</a></li></ul>
 </header></div>
       <main class="pt-8 px-10 w-full">
 
 <hr class="pb-6">
-<div class="blue svelte-bbuasi"><div class="md:flex space-y-3 md:space-y-0 justify-between items-baseline"><h1 class="text-4xl font-extralight">Post One</h1>
+<div class="blue pr-10 svelte-9ieykn"><div class="md:flex space-x-6 md:space-y-0 justify-between items-baseline"><h1 class="text-3xl">I. Intro &amp; dataset generation (Part 1)</h1>
     <p>22nd of March 2022</p></div>
 
-  <div class="py-20"><p>Hello, I am <em>Post One.</em></p>
-<p><strong>Nice to meet you!</strong></p></div>
-  <hr class="pb-6">
-  <div class="flex space-x-2 "><h2 class="rounded-md border px-2 bg-white font-semibold">Dataset
-        </h2><h2 class="rounded-md border px-2 bg-white font-semibold">test
-        </h2></div>
+  <div class="py-20 prose max-w-none xl:prose-lg prose-headings:font-normal prose-p:leading-7 text-justify blog-width svelte-9ieykn"><h1>This is an H1</h1>
+<h2>Why not (H2)</h2>
+<h3>H3 this one</h3>
+<table><thead><tr><th></th>
+<th>book_1</th>
+<th>book_2</th>
+<th>book_3</th></tr></thead>
+<tbody><tr><td>book_1</td>
+<td>7</td>
+<td>1</td>
+<td>3</td></tr>
+<tr><td>book_2</td>
+<td>5</td>
+<td>1</td>
+<td>2</td></tr>
+<tr><td>book_3</td>
+<td>3</td>
+<td>2</td>
+<td>3</td></tr></tbody></table>
+<ul><li>Why this project</li>
+<li>Define the data to be used</li>
+<li>Summary of next posts’ objectives</li></ul>
+<blockquote><p>Quoted text.</p>
+<ul><li>List</li></ul></blockquote>
+<blockquote><p>Quoted text.</p>
+<blockquote><p>Quoted quote.</p></blockquote></blockquote>
+<p>Here’s a simple footnote,[^1] and here’s a longer one.[^bignote]</p>
+<p>[^1]: This is the first footnote.</p>
+<p>[^bignote]: Here’s one with multiple paragraphs and code.</p>
+<p>Indent paragraphs to include them in the footnote.</p>
+<p><code>{ my code }</code></p>
+<p>Add as many paragraphs as you like.</p>
+<ol><li><ol><li>This is footnote 1.</li></ol></li></ol>
+<p><strong>Main idea</strong></p>
+<p>The main idea of <em>this project</em> is to go through all necessary steps to do a complete analysis of some realistic business data. <a href="https://link-url-here.org" rel="nofollow">Link text Here</a></p>
+<p>I’ll generate the data using Python in Jupyter Notebooks. The objective here is to create a somewhat realistic, and above all consistent data, that follows some set trends plus some randomness (both in individual values and the trend itself).</p>
+<p>So for example: …</p>
+<p>About the data</p>
+<ul><li>Located in different files</li>
+<li>Some will be in realtional tables</li>
+<li>Some  in excel-csv files</li>
+<li>Rough numbers: 5000 paid customers, 100000 have tried free demo. In Excel</li>
+<li>An avg of emails (could be 0, unlikely) per either contact or company. Received, opened, answered.</li>
+<li>An avg of calls per company (assigned to contacts)</li>
+<li>An avg of meets given companyoutcome. If company becomes client, has to have a minimum of 3 meets (1 discovery, 2 signing, 3 implementation)</li></ul>
+<p>About the storage of the data</p>
+<p>Let’s start creating data!</p>
+<p>Setting up the environment</p></div>
 </div></main></div>
-    <footer class="blue text-center py-1 border-t border-gray-300 svelte-bbuasi">© 2022 Joaquin Beltran | Made with <a href="https://kit.svelte.dev" target="_blank" class="text-blue-400">Sveltekit</a></footer></div>
+    <footer class="blue text-center py-1 border-t border-gray-300 svelte-bbuasi">© 2022 Joaquin Beltran | Made with <a href="https://kit.svelte.dev" target="_blank" class="text-blue-400">SvelteKit</a></footer></div>
 </div>
 
 
-		<script type="module" data-hydrate="l9hil">
-		import { start } from "/_app/start-dbdf93fd.js";
+		<script type="module" data-hydrate="54me0k">
+		import { start } from "/_app/start-ab6aabdc.js";
 		start({
-			target: document.querySelector('[data-hydrate="l9hil"]').parentNode,
+			target: document.querySelector('[data-hydrate="54me0k"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -56,8 +98,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/_app/pages/__layout.svelte-ed8b9a8d.js"),
-						import("/_app/pages/blog/1.md-7efedfcb.js")
+					import("/_app/pages/__layout.svelte-95c2f310.js"),
+						import("/_app/pages/blog/1.md-786dc464.js")
 				],
 				params: {},
 				routeId: "blog/1"

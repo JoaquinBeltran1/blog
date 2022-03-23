@@ -1,7 +1,6 @@
 <script>
   export let title;
   export let date;
-  export let tags;
 </script>
 
 <svelte:head>
@@ -9,30 +8,21 @@
 </svelte:head>
 
 <hr class="pb-6" />
-<div class="blue">
-  <div class="md:flex space-y-3 md:space-y-0 justify-between items-baseline">
-    <h1 class="text-4xl font-extralight">{title}</h1>
+<div class="blue pr-10">
+  <div class="md:flex space-x-6 md:space-y-0 justify-between items-baseline">
+    <h1 class="text-3xl">{title}</h1>
     <p>{date}</p>
   </div>
 
-  <div class="py-20">
-    <slot />
+  <div class="py-20 prose max-w-none xl:prose-lg prose-headings:font-normal prose-p:leading-7 text-justify blog-width">
+    <slot class="" />
   </div>
-  <hr class="pb-6" />
-  {#if tags}
-    <div class="flex space-x-2 ">
-      {#each tags as tag}
-        <h2 class="rounded-md border px-2 bg-white font-semibold">
-          {tag}
-        </h2>
-      {/each}
-    </div>
-  {:else}
-    <p />
-  {/if}
 </div>
 
 <style>
+  .blog-width {
+    max-width: 950px;
+  }
   .blue {
     color: rgb(52, 78, 162);
   }

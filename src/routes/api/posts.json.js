@@ -15,8 +15,6 @@ export const get = async () => {
     )
   
     const sortedPosts = allPosts.sort((a, b) => {
-        console.log(typeof(b.meta.number))
-
       return new Date(b.meta.number) - new Date(a.meta.number)
     })
   

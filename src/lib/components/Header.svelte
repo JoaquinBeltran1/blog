@@ -6,11 +6,11 @@
   <a href="/" class=" text-5xl blue text-length uppercase leading-tight">Joaquin Beltran</a>
 
   <ul class="flex flex-col space-y-2 pt-8 text-2xl font-extralight blue">
-    <li class="hover:text-blue-400" class:active={$page.url.pathname === "/blog"}>
-      <a href="/blog">Blog</a>
+    <li class:active={$page.url.pathname === "/blog"}>
+      <a href="/blog" class="hover:text-blue-400">Blog</a>
     </li>
-    <li class="hover:text-blue-400" class:active={$page.url.pathname === "/about"}>
-      <a href="/about">About</a>
+    <li class:active={$page.url.pathname === "/about"}>
+      <a href="/about" class="hover:text-blue-400">About</a>
     </li>
   </ul>
 </header>
