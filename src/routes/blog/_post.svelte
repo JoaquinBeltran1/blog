@@ -1,3 +1,8 @@
+<script context="module">
+  import 'prismjs';
+  import 'prismjs/themes/prism-nord.css';
+</script>
+
 <script>
   export let title;
   export let date;
@@ -14,7 +19,7 @@
     <p>{date}</p>
   </div>
 
-  <div class="py-20 prose max-w-none xl:prose-lg prose-headings:font-normal prose-p:leading-7 text-justify blog-width">
+  <div class="py-20 prose max-w-none xl:prose-lg prose-headings:font-normal prose-p:leading-6 prose-li:leading-6 text-justify blog-width">
     <slot class="" />
   </div>
 </div>

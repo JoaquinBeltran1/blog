@@ -5,6 +5,12 @@ module.exports = {
       fontFamily: {
         'inter': ['"Inter"']
       },
+      colors: {
+        grey: {
+          100: "#F5F7FA",
+          1000: "#1F2933"
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -35,7 +41,32 @@ module.exports = {
             },
             td: {
               color: '#828282'
+            },
+            pre: {
+              color: theme("colors.gray.100"),
+              backgroundColor: theme("colors.slate.700")
+            },
+            "pre code::before": {
+              "padding-left": "unset"
+            },
+            "pre code::after": {
+              "padding-right": "unset"
+            },
+            code: {
+              backgroundColor: theme("colors.green.100"),
+              color: "#DD1144",
+              fontWeight: "400",
+              "border-radius": "0.25rem"
+            },
+            "code::before": {
+              content: '""',
+              "padding-left": "0.25rem"
+            },
+            "code::after": {
+              content: '""',
+              "padding-right": "0.25rem"
             }
+          
           },
         },
       })

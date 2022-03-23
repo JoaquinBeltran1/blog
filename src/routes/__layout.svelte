@@ -5,7 +5,7 @@
 </script>
 
 <div class="h-screen font-inter">
-  <div class=" selection:bg-orange-200 flex flex-col h-full">
+  <div class=" selection:bg-blue-200 flex flex-col h-full">
     <div class="flex flex-col md:flex-row parent">
       <div class=" border-b pb-4 md:pb-0 md:border-r md:border-b-0 border-gray-300 px-8 pt-8">
         <Header />
