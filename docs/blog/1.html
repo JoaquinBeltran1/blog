@@ -8,14 +8,14 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content=""><title>I. Intro &amp; dataset generation (Part 1) | Joaquin Beltran</title>
-	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-8e52c446.css">
-	<link rel="stylesheet" href="/_app/assets/_post-d96bb1af.css">
-	<link rel="modulepreload" href="/_app/start-f4407fa6.js">
+		<meta http-equiv="content-security-policy" content=""><title>Introduction to project + dataset descriptions | Joaquin Beltran</title>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-fb9b33d3.css">
+	<link rel="stylesheet" href="/_app/assets/_post-56c591bb.css">
+	<link rel="modulepreload" href="/_app/start-f8c44495.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-bf74943f.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-af0a4d2a.js">
-	<link rel="modulepreload" href="/_app/pages/blog/1.md-4035182b.js">
-	<link rel="modulepreload" href="/_app/chunks/_post-f397144a.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-b92b2d34.js">
+	<link rel="modulepreload" href="/_app/pages/blog/1.md-cc973879.js">
+	<link rel="modulepreload" href="/_app/chunks/_post-54f49d8f.js">
 	</head>
 	<body>
 		<div>
@@ -28,113 +28,68 @@
 </header></div>
       <main class="pt-8 px-10 w-full">
 
-<hr class="pb-6">
-<div class="blue pr-10 svelte-9ieykn"><div class="md:flex space-x-6 md:space-y-0 justify-between items-baseline"><h1 class="text-3xl">I. Intro &amp; dataset generation (Part 1)</h1>
+<div class="blue pr-10 pt-4 svelte-9ily3g"><div class="md:flex space-x-6 md:space-y-0 justify-between items-baseline"><h1 class="text-3xl">Introduction to project + dataset descriptions</h1>
     <p>22nd of March 2022</p></div>
 
-  <div class="py-20 prose max-w-none xl:prose-lg prose-headings:font-normal prose-p:leading-6 prose-li:leading-6 text-justify blog-width svelte-9ieykn"><pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
-<p>Trying svelte in MD. Show the number: 21</p>
-<pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token comment"># Solve the quadratic equation ax**2 + bx + c = 0</span>
-
-<span class="token comment"># import complex math module</span>
-<span class="token keyword">import</span> cmath
-
-a <span class="token operator">=</span> <span class="token number">1</span>
-b <span class="token operator">=</span> <span class="token number">5</span>
-c <span class="token operator">=</span> <span class="token number">6</span>
-
-<span class="token comment"># calculate the discriminant</span>
-d <span class="token operator">=</span> <span class="token punctuation">(</span>b<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token operator">*</span>a<span class="token operator">*</span>c<span class="token punctuation">)</span>
-
-<span class="token comment"># find two solutions</span>
-sol1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>b<span class="token operator">-</span>cmath<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
-sol2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">-</span>b<span class="token operator">+</span>cmath<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'The solution are &#123;0&#125; and &#123;1&#125;'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>sol1<span class="token punctuation">,</span>sol2<span class="token punctuation">)</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<pre class="language-php"><!-- HTML_TAG_START --><code class="language-php"><span class="token keyword">class</span> <span class="token class-name-definition class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Pet</span>
-<span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span>
-        <span class="token keyword">public</span> <span class="token keyword type-declaration">string</span> <span class="token variable">$name</span><span class="token punctuation">,</span>
-        <span class="token keyword">public</span> <span class="token keyword type-declaration">bool</span> <span class="token variable">$isGoodBoy</span><span class="token punctuation">,</span>
-        <span class="token keyword">public</span> <span class="token keyword type-declaration">bool</span> <span class="token variable">$isHappy</span>
-    <span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">pat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
-    <span class="token punctuation">&#123;</span>
-        <span class="token variable">$this</span><span class="token operator">-></span><span class="token property">isHappy</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<h1>This is an H1</h1>
-<h2>Why not (H2)</h2>
-<h3>H3 this one</h3>
-<table><thead><tr><th></th>
-<th>book_1</th>
-<th>book_2</th>
-<th>book_3</th></tr></thead>
-<tbody><tr><td>book_1</td>
-<td>7</td>
-<td>1</td>
-<td>3</td></tr>
-<tr><td>book_2</td>
-<td>5</td>
-<td>1</td>
-<td>2</td></tr>
-<tr><td>book_3</td>
-<td>3</td>
-<td>2</td>
-<td>3</td></tr></tbody></table>
-<ul><li>Why this project</li>
-<li>Define the data to be used</li>
-<li>Summary of next posts’ objectives</li></ul>
-<blockquote><p>Quoted text.</p></blockquote>
-<blockquote><ul><li>List</li></ul></blockquote>
-<blockquote><p>Quoted text.</p>
-<blockquote><p>Quoted quote.</p></blockquote></blockquote>
-<p>Here’s a simple footnote,[^1] and here’s a longer one.[^bignote]</p>
-<p>[^1]: This is the first footnote.</p>
-<p>[^bignote]: Here’s one with multiple paragraphs and code.</p>
-<p>Indent paragraphs to include them in the footnote.</p>
-<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">my code</code><!-- HTML_TAG_END --></pre>
-<p>Add as many paragraphs as you like.</p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">add2</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-<span class="token keyword">return</span> number <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-</code><!-- HTML_TAG_END --></pre>
-<p>Hi, <strong>Main idea</strong>.</p>
-<p>The main idea of <em>this project</em> is to go through all necessary steps to do a complete analysis of some realistic business data. <a href="https://link-url-here.org" rel="nofollow">Link text Here</a></p>
+  <div class="py-20 prose max-w-none prose-headings:font-normal prose-li:leading-6 text-justify blog-width svelte-9ily3g"><p>Main idea</p>
+<p>The main objective of this project is to go through all necessary steps to do a complete analysis of some realistic business data. It’ll be divided in two parts</p>
+<ul><li>Functions to generate the data</li>
+<li>Steps to analyse this data</li></ul>
 <p>I’ll generate the data using Python in Jupyter Notebooks. The objective here is to create a somewhat realistic, and above all consistent data, that follows some set trends plus some randomness (both in individual values and the trend itself).</p>
-<p>So for example: …</p>
-<p>About the data</p>
+<p>The idea is to simulate around 3 years of data, with some set growth during this period of time. For this, I’ve decided to generate the data about a made-up B2B SaaS start-up.</p>
+<h2>Dataset 1</h2>
+<p>The first dataset will hold a few data points: only those coming from the billing process of paid customers. This will include:</p>
+<ul><li>Contact person’s name</li>
+<li>Contact person’s last name</li>
+<li>Company ID (or personal ID number if self-employed)</li>
+<li>Email</li>
+<li>Payment method</li>
+<li>Price plan in use</li></ul>
+<p>Regarding the price, it’ll have three variables: type of plan, number of users, timing.</p>
+<ul><li><p>Type of plan: 3 plans: business, pro, enterprise. Enterprise pricing will be considerably higher, given it includes implementing fees (hours needed to complete it) derived from connecting the start-up software with their ERP.</p></li>
+<li><p>Number of users. Regressive increase given the number of users. Business plan includes 1 user, each additional one will have an increase in price. Same for the pro (starting at 5 users) and enterprise (starting at 20 users) plans.</p></li>
+<li><p>Timing: at some points (2) in time in the past, there was a price increase, so that a business plan that a client signed up for in the beginning will carry that price up to our current date. In future iterations there will be a change in strategy where prices will be regularised (so some clients will unsubscribe).</p></li></ul>
+<p>This first dataset will be stored in an Excel-like table. New rows of data will represent new customers. Those who churn will still be in the dataset, with the column “Active User” set to false.</p>
+<p>It’ll have 5000 paid active users.</p>
+<h2>Dataset 2</h2>
+<p>The second dataset will also be an Excel-like table with sign-ins to the free 14-day trial that is automatically from the website. This data will include:</p>
+<ul><li>Contact’s first name</li>
+<li>Contact’s last name</li>
+<li>Email</li>
+<li>Company’s name (not required)</li>
+<li>Industry (not required)</li>
+<li>Question: How did you learn about us? (not required). List of options to chose from.</li></ul>
+<p>This dataset will also include automatic data for each row:</p>
+<ul><li>User’s country</li>
+<li>Date of registration</li>
+<li>Web browser</li></ul>
+<p>This dataset will be extremely noisy, as many registrations won’t represent genuine interest in the software, but only curiosity. All fields but the email can be fake. Email can’t be used more than once.</p>
+<p>It’ll have 120,000 rows.</p>
+<h2>Dataset 3</h2>
+<p>This third dataset will hold data as if it were a CRM, meaning that it’ll be a relational database consisting of a record of different types of interactions with contacts.</p>
+<p>It’ll be composed of</p>
+<h2>Data summary</h2>
+<p>To summarise, the data will follow these guides:</p>
 <ul><li>Located in different files</li>
-<li>Some will be in realtional tables</li>
+<li>Some will be in relational tables</li>
 <li>Some  in excel-csv files</li>
 <li>Rough numbers: 5000 paid customers, 100000 have tried free demo. In Excel</li>
 <li>An avg of emails (could be 0, unlikely) per either contact or company. Received, opened, answered.</li>
 <li>An avg of calls per company (assigned to contacts)</li>
 <li>An avg of meets given companyoutcome. If company becomes client, has to have a minimum of 3 meets (1 discovery, 2 signing, 3 implementation)</li></ul>
 <p>About the storage of the data</p>
+<p>The environment I’ll be working in is: …</p>
 <p>Let’s start creating data!</p>
-<p>Setting up the environment</p>
-<table><thead><tr><th align="right"></th>
-<th align="left">animal_1</th>
-<th align="left">animal_2</th></tr></thead>
-<tbody><tr><td align="right">0</td>
-<td align="left">elk</td>
-<td align="left">dog</td></tr>
-<tr><td align="right">1</td>
-<td align="left">pig</td>
-<td align="left">quetzal</td></tr></tbody></table></div>
+<p>Setting up the environment</p></div>
 </div></main></div>
     <footer class="blue text-center py-1 border-t border-gray-300 svelte-bbuasi">© 2022 Joaquin Beltran | Made with <a href="https://kit.svelte.dev" target="_blank" class="text-blue-400">SvelteKit</a></footer></div>
 </div>
 
 
-		<script type="module" data-hydrate="7srazk">
-		import { start } from "/_app/start-f4407fa6.js";
+		<script type="module" data-hydrate="1f7x51a">
+		import { start } from "/_app/start-f8c44495.js";
 		start({
-			target: document.querySelector('[data-hydrate="7srazk"]').parentNode,
+			target: document.querySelector('[data-hydrate="1f7x51a"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -144,8 +99,8 @@ sol2 <span class="token operator">=</span> <span class="token punctuation">(</sp
 				status: 200,
 				error: null,
 				nodes: [
-					import("/_app/pages/__layout.svelte-af0a4d2a.js"),
-						import("/_app/pages/blog/1.md-4035182b.js")
+					import("/_app/pages/__layout.svelte-b92b2d34.js"),
+						import("/_app/pages/blog/1.md-cc973879.js")
 				],
 				params: {},
 				routeId: "blog/1"

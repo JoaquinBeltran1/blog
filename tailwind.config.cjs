@@ -31,7 +31,9 @@ module.exports = {
               color: '#474747',
             },
             li: {
-              color: '#474747'
+              color: '#474747',
+              "margin-top": "0px",
+              "margin-bottom": "0px"
             },
             a: {
               color: '#344ea2',
@@ -65,6 +67,10 @@ module.exports = {
             "code::after": {
               content: '""',
               "padding-right": "0.25rem"
+            },
+            blockquote: {
+              "border-left-color": "#5d75c2",
+              "background-color": "#f0f4ff"
             }
           
           },
