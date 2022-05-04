@@ -19,7 +19,7 @@
   <title>Blog | Joaquin Beltran</title>
 </svelte:head>
 
-<ul class="space-y-3 pt-3">
+<ul class="space-y-3 pt-3 table m-auto">
   {#each posts as post}
     <li class="px-8">
       <div class="flex flex-col justify-between items-baseline">
